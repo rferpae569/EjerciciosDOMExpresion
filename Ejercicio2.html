@@ -5,24 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio2</title>
-    <script>
-        
-        let array = [];
-        
-        function añadirArray() {
-            let valor = document.getElementById("texto").value;
-            array.push(valor);
-            document.getElementById("texto").value = "";
-            let lista = "<ul>";
-            for (let i = array.length - 1; i >= 0; i--) {
-                lista += "<li>" + array[i] + "</li>";
-            }
-            lista += "</ul>";
-            document.getElementById("lista").innerHTML = lista;
-        }
-        
-        
-        </script>
+    <script src="Ejercicio2.js"></script>
 </head>
 <body>  
         <input type="text" id="texto" onkeypress="if(event.keyCode == 13) añadirArray()">
